@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="2b40c3d8-30c0-4573-b2d6-4d42e817ae55" name="UMLClassDiagram1" linkedPackageId="3455ba3f-209f-4398-82de-af4ab5c8afe5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="40f4c185-1aea-4730-99b7-4438d82ab3a9">
+      <profileInstance Id="229ab451-a9aa-4426-8c5c-8fee6c53e53d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a078ac36-e1d5-40d1-848f-5dc3699a5346">
+      <profileInstance Id="992ff4a4-0f68-4b2e-b7bd-65d3db7c2cd3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6dda3e49-0f3b-44f3-bc0f-3732748e1e24" name="Venue" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1a31421c-ea05-4f7e-875e-cc3556b19f1e" />
+        <ownedAttributesInternal>
+          <property Id="647c2624-f489-43bb-b4ca-66367dee0898" name="int numEvents" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c99e1f51-f775-40d9-8278-7305e1b76e39" />
+          </property>
+          <property Id="7550160a-ea0a-41cc-ad85-0a6ef08c7a7f" name="Event scheduledEvents[]" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="271b0345-68bc-4180-84d4-4c84da46c303" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8fbba8e1-18d6-48bf-908f-fbf88c4fcd84" name="bool validTime" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="50561acf-45e4-4a29-88c5-9afdb1ce775e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a81f43f2-89cb-470c-8742-496820059bcf" name="int time" direction="In" isUnique="false">
+                  <elementDefinition Id="e4ba946c-6f6d-4f86-b75f-b9e4ab7c0aad" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="38c72f7a-9b8e-4762-ac85-a42452f4e6ca" name="void addEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="21857ce4-7a3f-4a3b-9e9c-6f8868adf0e7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="25eb85f1-4368-4158-91f8-d7e76038bf81" name="int time" direction="In" isUnique="false">
+                  <elementDefinition Id="2a528c0a-9dc8-4538-bc17-1b16106a1b7f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="37323ab1-af42-4ac6-942d-47c7a5f97827" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="a05f74b5-d0f4-483e-9a01-1845f18a0e52" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4f132f99-f2c5-479d-9a4d-6d2d695fb5ec" name="Event findEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aaebd7b6-d19c-4e42-b3d4-526d6633a37f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a1e07288-2717-4bcf-a8ba-21dc4a797d4a" name="int time" direction="In" isUnique="false">
+                  <elementDefinition Id="bf58b033-0b03-4b55-a38b-2791d6a56501" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f7fec7ce-1aea-4ed8-9e4e-f7a49a43abb1" name="Event fineEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f1d46e4-c0c1-447b-98ac-62c88167380e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="84bdb88a-bce7-435e-aeb7-c72e3e22ad08" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="0f9f858b-10e6-4005-903d-994386148729" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ad903a28-28d8-4b1a-b968-9565aaaff41a" name="Event" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="15f05661-213a-4a83-a6f9-2d150ecbca0e" />
+        <ownedAttributesInternal>
+          <property Id="0571bc6c-01eb-4622-9698-ae701826b624" name="int Time" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f93b56cb-0b99-4c64-9f00-285d6006ee3e" />
+          </property>
+          <property Id="ad5ed624-38b5-4a2a-9771-cdcd691ec0ea" name="string Title" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f166bde2-8aec-4f32-bbf2-84f7de9ed53d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e2542969-333c-4dcc-91c5-61a5ebf825e5" name="void setTitle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f0fb2f6-50cc-41fc-8a3c-8fb3ff367742" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6e1b286-be70-4007-826e-0b320f2461eb" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="d3ea26d2-5923-4106-b171-e20df14c6e81" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5841d45b-cec4-4234-95a1-ae2ecd1270a0" name="void setTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ec949f38-159e-4d05-9c71-9861b41b3134" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aca91c93-ee68-4622-bb62-13d577ec3566" name="int t" direction="In" isUnique="false">
+                  <elementDefinition Id="75401abb-bbf7-4dc8-936e-cc45f304e515" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6421dc1c-f146-4220-bb08-8e503ad2604a" name="string getTitle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2263cc17-6cbc-4c0a-a508-a6675008a184" />
+          </operation>
+          <operation Id="ac82ffcd-5287-4318-9499-d3b3929b4904" name="Event" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="21d7a23b-1fd7-40e5-91b8-08cd568d134a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b7acab01-c82e-4ed1-ab2e-bd9b8d580970" name="int time" direction="In" isUnique="false">
+                  <elementDefinition Id="b0f1b6f7-9a0b-4b0c-9a80-e97e6f3e37d1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4b13a8bb-b360-45d5-b237-cc37cc3f17eb" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="58bbde4c-05ea-4bdc-8caf-ce7d3974962d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7e1e9d35-e460-4277-b3c3-1fcba9da7a80" name="Event" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ce150f15-154d-46cd-a274-eff33b63f81e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="3455ba3f-209f-4398-82de-af4ab5c8afe5" name="Event and Venue">
+    <elementDefinition Id="3abb6346-75e3-4c7f-a24b-9178f709d66f" />
+  </package>
+</logicalClassDesignerModel>
