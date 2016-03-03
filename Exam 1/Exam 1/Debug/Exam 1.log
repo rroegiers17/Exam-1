@@ -1,0 +1,18 @@
+﻿Build started 3/3/2016 10:32:07 AM.
+     1>Project "C:\Users\rroegiers17\Documents\GitHub\Exam-1\Exam 1\Exam 1\Exam 1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Event.cpp Main.cpp Venue.cpp
+         Venue.cpp
+         Main.cpp
+     1>c:\users\rroegiers17\documents\github\exam-1\exam 1\exam 1\main.cpp(23): error C2039: 'getTime': is not a member of 'Event'
+         c:\users\rroegiers17\documents\github\exam-1\exam 1\exam 1\event.h(7): note: see declaration of 'Event'
+     1>c:\users\rroegiers17\documents\github\exam-1\exam 1\exam 1\main.cpp(24): error C2039: 'getTime': is not a member of 'Event'
+         c:\users\rroegiers17\documents\github\exam-1\exam 1\exam 1\event.h(7): note: see declaration of 'Event'
+         Event.cpp
+     1>c:\users\rroegiers17\documents\github\exam-1\exam 1\exam 1\event.cpp(10): error C2065: 'Name': undeclared identifier
+         Generating Code...
+     1>Done Building Project "C:\Users\rroegiers17\Documents\GitHub\Exam-1\Exam 1\Exam 1\Exam 1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.26
